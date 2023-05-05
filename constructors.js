@@ -139,17 +139,17 @@ const question1 = new Question(
     "thirty"
   );
   
-  // Create a quiz and add the questions
+ 
   const quiz = new Quiz();
   quiz.addQuestion(question1);
   quiz.addQuestion(question2);
   
-  // Ask the questions and check the answers
-  console.log(quiz.questions[0].text); // "What is the capital of France?"
+ 
+  console.log(quiz.questions[0].text); 
   quiz.submitAnswer("Paul Kagame");
-  console.log(quiz.score); // 1
+  console.log(quiz.score); 
   quiz.nextQuestion();
-  console.log(quiz.questions[1].text); // "What is the highest mountain in the world?"
+  console.log(quiz.questions[1].text);
   quiz.submitAnswer("thirty");
   console.log(quiz.score); 
   
